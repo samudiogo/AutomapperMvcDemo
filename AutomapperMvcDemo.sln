@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{4CA027
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomapperMvcDemo.Domain", "AutomapperMvcDemo.Domain\AutomapperMvcDemo.Domain.csproj", "{072A5709-BF85-4AF2-9553-E161A81B9CE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomapperMvcDemo", "AutomapperMvcDemo\AutomapperMvcDemo.csproj", "{5D1B9EB1-96FE-4F7F-847B-4A1C89844F34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,16 @@ Global
 		{072A5709-BF85-4AF2-9553-E161A81B9CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{072A5709-BF85-4AF2-9553-E161A81B9CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{072A5709-BF85-4AF2-9553-E161A81B9CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1B9EB1-96FE-4F7F-847B-4A1C89844F34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1B9EB1-96FE-4F7F-847B-4A1C89844F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1B9EB1-96FE-4F7F-847B-4A1C89844F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1B9EB1-96FE-4F7F-847B-4A1C89844F34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{072A5709-BF85-4AF2-9553-E161A81B9CE3} = {4CA02741-2EC8-401D-8EF1-CAB4CED173DE}
+		{5D1B9EB1-96FE-4F7F-847B-4A1C89844F34} = {A8BFE7E4-D0D8-4D05-8C5E-6AB68F23B7BD}
 	EndGlobalSection
 EndGlobal
