@@ -4,6 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using AutomapperMvcDemo.Domain.Entities;
+
+using static AutomapperMvcDemo.AutoMapper.AutoMapperConfig;
+using AutomapperMvcDemo.Models;
+
 namespace AutomapperMvcDemo.Controllers
 {
     public class HomeController : Controller
@@ -11,7 +15,10 @@ namespace AutomapperMvcDemo.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            var studentListModel = Mapper.Map<IEnumerable<Student>, IEnumerable<StudentViewModel>>
+                (StudentMockList());
+
+            return View(studentListModel);
         }
         private List<Student> StudentMockList()
         {
