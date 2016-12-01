@@ -1,10 +1,6 @@
 ﻿using AutoMapper;
 using AutomapperMvcDemo.Domain.Entities;
 using AutomapperMvcDemo.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace AutomapperMvcDemo.AutoMapper
 {
@@ -14,26 +10,13 @@ namespace AutomapperMvcDemo.AutoMapper
 
         public static void RegisterMappings()
         {
-            Mapper = new Mapper(new MapperConfiguration(m=> {
-                m.AddProfile<DomainToViewModelProfile>();
-                m.AddProfile<ViewModelToDomainProfile>();
+            Mapper = new Mapper(new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<Student, StudentViewModel>().ReverseMap();
+                cfg.CreateMap<StudentViewModel, Student>().ReverseMap();
+
             }));
         }
     }
 
-    public class DomainToViewModelProfile : Profile
-    {
-        public DomainToViewModelProfile()
-        {
-            CreateMap<Student, StudentViewModel>();
-        }
-    }
-
-    public class ViewModelToDomainProfile : Profile
-    {
-        public ViewModelToDomainProfile()
-        {
-            CreateMap<StudentViewModel, Student>();
-        }
-    }
 }
